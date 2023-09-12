@@ -1,0 +1,303 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+
+  
+   <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;600&display=swap" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <style>
+    .main-container {
+      margin: 0 auto;
+      max-width: 800px;  
+    }
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Nunito', sans-serif;
+      overflow-x: hidden;
+    }
+
+    .header {
+      background-color: #EF6C00;  
+      color: white;
+      text-align: center;
+    }
+    .header .bg-cover {
+      height:220px;
+      background-image: url("https://cdn.tuoitre.vn/2022/7/14/5-16577783211941704268300.jpg");
+      background-position: center;
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
+
+    .main-container {
+      margin: 0 auto;
+      max-width: 800px;  
+      background-color: white;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+      border-radius: 10px;
+    }
+
+     
+    .btn-primary {
+      background-color: #eb582c;
+      border-color: #eb582c;
+    }
+
+     
+    .footer {
+      background-color: #f8f9fa;
+      text-align: center;
+      padding: 10px;
+    }
+    .custom-search {
+      position: relative;
+      width: 100%;
+    }
+    .custom-search-input {
+      width: 100%;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      padding: 10px 90px 10px 10px;
+      line-height: 1;
+      box-sizing: border-box;
+      outline: none;
+    }
+    .custom-search-botton {
+      position: absolute;
+      right: 20px;
+      top: 7px;
+      bottom: 7px;
+      border: 0;
+      background: #dc593b;
+      color: #fff;
+      outline: none;
+      margin: 0;
+      padding: 0 10px;
+      border-radius: 5px;
+      z-index: 2;
+    }
+  </style>
+</head>
+
+<body class="app sidebar-mini ltr">
+
+
+<div class="page">
+  <input type="hidden" id="userId" value="Lacdeptrai">
+  <div class="page-main">
+    
+    <div class="main-content app-content mt-0">
+      <div class="side-app">
+
+        
+        <div class="main-container ">
+
+          
+
+
+
+
+
+
+          <div style="width:100%" class="header"><img style="width:100%"
+                                       src="https://cdn.tuoitre.vn/2022/7/14/5-16577783211941704268300.jpg">
+            <h3 class="page-title bold">Thêm sản phẩm vào CUỐI GIỎ live</h3>
+          </div>
+          
+
+          
+          <div class="container" style="margin-bottom: 10px; margin-top: 10px">
+            <div class="row justify-content-center">
+              <div class="col-12 col-lg-9">
+                <div class="card">
+                  <div class="card-body">
+                    <div class="row row-sm">
+                      <div class="col-lg">
+                        
+                        <input id="item_id" class="custom-search-input"
+                               placeholder="Nhập link sản phẩm: VD: 'https://shope.ee/....' " required="" type="text"
+                               value="">
+                        <button id="past" class="custom-search-botton" type="submit">Dán link</button></div>
+                    </div>
+                    <div class="row row-sm" style="padding-top: 10px">
+                      <div class="col-lg">
+                        Lưu ý: sản phẩm bạn thêm sẽ ở khúc GẦN CUỐI giỏ live (Kéo xuống hết giỏ hàng rồi tìm dần lên nhé)<br/><br/>
+                      </div>
+                    </div>
+                    <div class="row row-sm">
+                      <button id="submitButton" class="btn btn-primary" style="width: auto; margin-left: auto; margin-right: auto; margin-bottom: 3%;">Thêm vào live</button>
+                    </div>
+                    <div class="row row-sm">
+                      <div class="col-lg mg-t-10">
+                        <h5 class="page-title" id="output"></h5>
+
+                      </div>
+                    </div>
+                    <div class="row row-sm">
+                      <div class="col-lg mg-t-10">
+                        <h6 class="page-title">👉 Live: <a href="https://shope.ee/8KNFymi9xo" target="_blank"><span style="color: blue; font-weight: bold;">https://shope.ee/8KNFymi9xo</span></a></h6>
+
+                      </div>
+                    </div>
+                    <div class="row row-sm">
+                      <div class="col-lg mg-t-10">
+                        <!-- <h6 class="page-title">👉 FB: <a href="https://www.facebook.com/groups/273182203788458/?ref=share_group_link" target="_blank"><span style="color: blue; font-weight: bold;">SHOPEE - HÔM NAY CÓ GÌ?</span></a></h6> -->
+                      </div>
+                    </div>
+                    <div class="row row-sm">
+                      <div class="col-lg mg-t-10">
+                        <h6 class="page-title">👉 Telegram: <a href="https://t.me/sansalesapsan" target="_blank"><span style="color: blue; font-weight: bold;">https://t.me/sansalesapsan</span></a></h6>
+                      </div>
+                    </div>
+                  </div>
+                  
+                </div>
+              </div>
+            </div>
+            <br/>
+            <div class="row justify-content-center" style="font-size: 14px">
+              <div class="col-xl-9 col-lg-9">
+                <div class="card">
+                  <div class="card-body">
+                    <div class="row row-sm">
+                      <div class="col-lg">
+                        ✅ HƯỚNG DẪN THÊM SẢN PHẨM VÀO GIỎ LIVE TỰ ĐỘNG ĐỂ DÙNG MÃ 40K/0Đ, 25K/0Đ, 100K/400K và 20% /100K
+                      </div>
+                    </div>
+                    <div class="row row-sm">
+                      <div class="col-lg">
+                        <span class="bold">👉 Bước 1:</span> Bạn vào app Shopee copy link sản phẩm
+                      </div>
+                    </div>
+                    <div class="row row-sm">
+                      <div class="col-lg">
+                        <span class="bold">👉 Bước 2:</span> Dán link sản phẩm vào thanh tìm kiếm phía trên kia kìa
+                      </div>
+                    </div>
+                    <div class="row row-sm">
+                      <div class="col-lg">
+                        <span class="bold">👉 Bước 3:</span> Bấm vào nút "Thêm vào live"
+                      </div>
+                    </div>
+                    <div class="row row-sm">
+                      <div class="col-lg">
+                        <span class="bold">👉 Bước 4:</span> Màn hình sẽ hiện link live, bạn bấm vào đó để vào live
+                      </div>
+                    </div>
+                    <div class="row row-sm">
+                      <div class="col-lg">
+                        <span class="bold">👉 Bước 5:</span> Sản phẩm sẽ hiện ở <span> cuối </span>giỏ live. Bạn mua hàng để hưởng mã live và MPVC nhé  🎁
+                      </div>
+                    </div>
+
+                    <div class="row row-sm">
+                      <div class="col-lg">
+                        <span class="bold">Lưu ý:</span>: Mã live back lại vào 20H hằng ngày hoặc 0H ngày sale nhé
+                      </div>
+                    </div>
+                  </div>
+                  
+
+                </div>
+              </div>
+              
+            </div>
+          </div>
+            
+          
+
+        </div>
+        
+      </div>
+    </div>
+    
+  </div>
+
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+
+      
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title">Thành công</h4>
+        </div>
+        <div class="modal-body">
+          <p>✅ Thêm sản phẩm thành công vào giỏ hàng trong LIVE </p>
+          <p>✅ SẢN PHẨM CỦA BẠN Ở CUỐI GIỎ HÀNG (BẠN KÉO GIỎ HÀNG XUỐNG HẾT RỒI KÉO DẦN LÊN XÍU LÀ THẤY NHÉ)</p>
+          <p>👉 Vô live mua ngay tại: <a href="https://shope.ee/8KNFymi9xo" target="_blank"><span style="color: blue; font-weight: bold;">https://shope.ee/8KNFymi9xo</span></a></p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Đóng</button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+ 
+</div>
+
+
+</body>
+
+
+<script type="text/javascript">
+  $(document).ready(function () {
+    const btn = document.getElementById('past');
+    if (!navigator.clipboard || !(typeof navigator.clipboard.readText === 'function')) {
+      btn.style.display = "none"
+    }
+    
+    $("#past").click(function () {
+      if (navigator.clipboard) {
+        navigator.clipboard
+          .readText()
+          .then(
+            cliptext =>
+              (document.getElementById('item_id').value = cliptext),
+            err => console.log(err)
+          );
+      }
+    });
+
+    $("#submitButton").click(function () {
+      
+      var editor = document.getElementById('item_id');
+      var content = editor.value;
+
+    
+      var submitButton = document.getElementById("submitButton");
+      
+      
+
+      $.ajax({
+        type: "POST",
+        url: "/api/live_x",
+        data: JSON.stringify({
+          content: content,
+        }),
+        contentType: "application/json", // Đảm bảo rằng dữ liệu được gửi dưới dạng JSON
+        success: function(response) {
+          $('#myModal').modal('show');
+        },
+        error: function(error) {
+          alert("Có lỗi xảy ra trong quá trình xử lý. Vui lòng thử lại!");
+        }
+      });
+      event.preventDefault();
+
+    })
+  })
+</script>
